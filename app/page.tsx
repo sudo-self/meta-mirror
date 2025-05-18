@@ -15,9 +15,9 @@ export default function Home() {
       <main className="container py-10">
         <div className="space-y-6">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tight">Open Graph Debugger</h2>
+            <h2 className="text-3xl font-bold tracking-tight">seo.JesseJesse.com</h2>
             <p className="text-muted-foreground">
-              Enter a URL to see how it will appear on different social media platforms
+              Enter a URL to see how it will appear on different platforms
             </p>
           </div>
 
@@ -26,7 +26,7 @@ export default function Home() {
           <div className="rounded-lg border bg-card p-6 text-card-foreground shadow-sm">
             <h3 className="font-semibold mb-2">About this tool</h3>
             <p className="text-sm text-muted-foreground">
-              This Open Graph debugger helps you visualize how your URLs will appear when shared on social media
+              This tool helps visualize how your URLs will appear when shared on social media
               platforms. It extracts Open Graph metadata from any URL and displays previews for Facebook, Twitter,
               LinkedIn, and Pinterest.
             </p>
