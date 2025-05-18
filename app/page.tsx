@@ -15,7 +15,7 @@ export default function Home() {
       <main className="container py-10">
         <div className="space-y-6">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tight">Open Graph SEO Tool</h2>
+            <h2 className="text-3xl font-bold tracking-tight">Open Graph SEO</h2>
             <p className="text-muted-foreground">
               Enter a URL to see how it will appear on different platforms
             </p>
@@ -24,11 +24,11 @@ export default function Home() {
           <OgDebugger />
 
           <div className="rounded-lg border bg-card p-6 text-card-foreground shadow-sm">
-            <h3 className="font-semibold mb-2">About this tool</h3>
+            <h3 className="font-semibold mb-2">seo.sudo-self.com</h3>
             <p className="text-sm text-muted-foreground">
               This tool helps visualize how your URLs will appear when shared on social media
               platforms. It extracts Open Graph metadata from any URL and displays previews for Facebook, Twitter,
-              LinkedIn, and Pinterest. includes an SEO score and suggestive improvements. 
+              LinkedIn, an SEO score with suggestive improvements. 
             </p>
           </div>
         </div>
