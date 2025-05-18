@@ -61,7 +61,7 @@ export function LogoWithText({
   return (
     <div className={cn("flex items-center gap-2", className)}>
       <Logo size={size} iconClassName={iconClassName} className="gap-0" />
-      <h1 className={cn("font-semibold tracking-tight", textClassName)}>OG Debugger</h1>
+      <h1 className={cn("font-semibold tracking-tight", textClassName)}>SEO</h1>
     </div>
   )
 }
