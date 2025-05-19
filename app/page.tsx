@@ -1,6 +1,7 @@
 import { OgDebugger } from "@/components/og-debugger"
 import { ModeToggle } from "@/components/mode-toggle"
 import { LogoWithText } from "@/components/logo"
+import { MetaTagMaker } from '../components/MetaTagMaker';
 
 export default function Home() {
   return (
@@ -29,8 +30,18 @@ export default function Home() {
              This tool lets you preview how your URLs will appear when shared online by extracting Open Graph metadata. It also provides actionable feedback to help you optimize for improved search visibility and social media engagement.
             </p>
           </div>
+             <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+      <MetaTagMaker />
+    </div>
         </div>
       </main>
     </div>
   )
 }
+
+
+
+
+
+
+
