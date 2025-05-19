@@ -1,8 +1,16 @@
 import { OgDebugger } from "@/components/og-debugger"
 import { ModeToggle } from "@/components/mode-toggle"
 import { LogoWithText } from "@/components/logo"
-import MetaTagMaker from '../components/MetaTagMaker';
+import MetaTagMaker from '../components/MetaTagMaker'
 
+import {
+  Dialog,
+  DialogTrigger,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogDescription
+} from "@/components/ui/dialog"
 
 export default function Home() {
   return (
@@ -28,17 +36,35 @@ export default function Home() {
           <div className="rounded-lg border bg-card p-6 text-card-foreground shadow-sm">
             <h3 className="font-semibold mb-2">How it Works</h3>
             <p className="text-sm text-muted-foreground">
-             This tool lets you preview how your URLs will appear when shared online by extracting Open Graph metadata. It also provides actionable feedback to help you optimize for improved search visibility and social media engagement.
+              This tool lets you preview how your URLs will appear when shared online by extracting Open Graph metadata. It also provides actionable feedback to help you optimize for improved search visibility and social media engagement.
             </p>
           </div>
-             <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
-      <MetaTagMaker />
-    </div>
+
+          {/* MetaTagMaker Modal */}
+          <Dialog>
+            <DialogTrigger asChild>
+              <button className="px-4 py-2 bg-primary text-white rounded-md hover:bg-primary/90">
+                Open Meta Tag Maker
+              </button>
+            </DialogTrigger>
+            <DialogContent className="max-w-3xl">
+              <DialogHeader>
+                <DialogTitle>Meta Tag Maker</DialogTitle>
+                <DialogDescription>
+                  Create your custom SEO metadata
+                </DialogDescription>
+              </DialogHeader>
+              <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+                <MetaTagMaker />
+              </div>
+            </DialogContent>
+          </Dialog>
         </div>
       </main>
     </div>
   )
 }
+
 
 
 
