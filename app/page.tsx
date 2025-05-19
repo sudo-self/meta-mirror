@@ -15,7 +15,7 @@ export default function Home() {
       <main className="container py-10">
         <div className="space-y-6">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tight">seo.JesseJesse.com</h2>
+            <h2 className="text-3xl font-bold tracking-tight">seo.sudo-self.com</h2>
             <p className="text-muted-foreground">
               Enter a URL to see how it will appear on different platforms
             </p>
@@ -26,7 +26,7 @@ export default function Home() {
           <div className="rounded-lg border bg-card p-6 text-card-foreground shadow-sm">
             <h3 className="font-semibold mb-2">How it Works</h3>
             <p className="text-sm text-muted-foreground">
-              This tool allows you to visualize how your URLs will appear when shared on the internet. It extracts Open Graph metadata from the URL and provides a score based on seo metadata such as Keywords, title, description, and canonical URL. 
+              This tool allows you to visualize how your URLs will appear when shared on the internet. It extracts Open Graph metadata from the URL and provides a score based on seo metadata such as Keywords, title, description, and canonical URL. It also provides specific feedback on how to improve SEO based on those properties. 
             </p>
           </div>
         </div>
