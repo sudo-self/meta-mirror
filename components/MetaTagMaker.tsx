@@ -168,7 +168,7 @@ const MetaTagMaker = () => {
 
         <button
           onClick={handleGenerate}
-          className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded transition duration-150"
+          className="bg-neutral-900 hover:bg-neutral-800 text-white font-semibold py-2 px-4 rounded transition duration-150"
         >
           Generate Metadata
         </button>
@@ -184,13 +184,13 @@ const MetaTagMaker = () => {
           <div className="flex gap-3 mt-2">
             <button
               onClick={handleCopyToClipboard}
-              className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded"
+              className="bg-neutral-900 hover:bg-neutral-800 text-white font-semibold py-2 px-4 rounded"
             >
               Copy
             </button>
             <button
               onClick={handleDownload}
-              className="bg-gray-700 hover:bg-gray-800 text-white font-semibold py-2 px-4 rounded"
+              className="bg-neutral-900 hover:bg-neutral-800 text-white font-semibold py-2 px-4 rounded"
             >
               Download
             </button>
@@ -202,5 +202,6 @@ const MetaTagMaker = () => {
 };
 
 export default MetaTagMaker;
+
 
 
