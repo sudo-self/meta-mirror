@@ -66,7 +66,7 @@ export function UrlForm({
             <div className="relative flex-1">
               <Input
                 type="text"
-                placeholder="Enter a URL (e.g., example.com)"
+                placeholder="Enter a URL..."
                 value={url}
                 onChange={(e) => {
                   onUrlChange(e.target.value)
@@ -144,7 +144,7 @@ export function UrlForm({
           {url.trim() !== "" && !isValid && !error && (
             <p className="text-sm text-destructive flex items-center gap-1.5" id="url-error">
               <AlertCircle className="h-3.5 w-3.5" />
-              Please enter a valid URL (e.g., example.com or https://example.com)
+              Please enter a valid URL example.com or https://example.com
             </p>
           )}
         </div>
