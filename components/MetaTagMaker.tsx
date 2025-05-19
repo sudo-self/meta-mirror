@@ -115,7 +115,7 @@ const MetaTagMaker = () => {
           <input
             id="title"
             type="text"
-            className="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring focus:border-blue-300"
+            className="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring focus:border-blue-300 dark:bg-gray-800 dark:text-white"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             placeholder="Enter the page title"
@@ -131,7 +131,7 @@ const MetaTagMaker = () => {
           </label>
           <textarea
             id="description"
-            className="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring focus:border-blue-300"
+            className="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring focus:border-blue-300 dark:bg-gray-800 dark:text-white"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
             placeholder="Enter the meta description"
@@ -145,7 +145,7 @@ const MetaTagMaker = () => {
           <input
             id="image"
             type="text"
-            className="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring focus:border-blue-300"
+            className="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring focus:border-blue-300 dark:bg-gray-800 dark:text-white"
             value={image}
             onChange={(e) => setImage(e.target.value)}
             placeholder="https://example.com/image.jpg"
@@ -159,7 +159,7 @@ const MetaTagMaker = () => {
           <input
             id="url"
             type="text"
-            className="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring focus:border-blue-300"
+            className="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring focus:border-blue-300 dark:bg-gray-800 dark:text-white"
             value={url}
             onChange={(e) => setUrl(e.target.value)}
             placeholder="https://example.com"
@@ -168,7 +168,7 @@ const MetaTagMaker = () => {
 
         <button
           onClick={handleGenerate}
-          className="bg-neutral-900 hover:bg-neutral-800 text-white font-semibold py-2 px-4 rounded transition duration-150"
+          className="bg-gray-800 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded transition duration-150 dark:bg-gray-900 dark:hover:bg-gray-700"
         >
           Generate Metadata
         </button>
@@ -178,19 +178,19 @@ const MetaTagMaker = () => {
       {output && (
         <div className="mt-8">
           <h2 className="text-xl font-semibold mb-2">Generated Metadata</h2>
-          <pre className="bg-gray-100 p-4 rounded-md max-h-96 overflow-auto whitespace-pre-wrap text-sm">
+          <pre className="bg-gray-100 dark:bg-gray-800 p-4 rounded-md max-h-96 overflow-auto whitespace-pre-wrap text-sm text-gray-900 dark:text-white">
             {output}
           </pre>
           <div className="flex gap-3 mt-2">
             <button
               onClick={handleCopyToClipboard}
-              className="bg-neutral-900 hover:bg-neutral-800 text-white font-semibold py-2 px-4 rounded"
+              className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-4 rounded"
             >
               Copy
             </button>
             <button
               onClick={handleDownload}
-              className="bg-neutral-900 hover:bg-neutral-800 text-white font-semibold py-2 px-4 rounded"
+              className="bg-gray-700 hover:bg-gray-800 text-white font-semibold py-2 px-4 rounded"
             >
               Download
             </button>
@@ -202,6 +202,7 @@ const MetaTagMaker = () => {
 };
 
 export default MetaTagMaker;
+
 
 
 
