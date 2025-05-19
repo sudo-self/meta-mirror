@@ -55,9 +55,10 @@ export default function Home() {
         Create SEO metadata
       </DialogDescription>
     </DialogHeader>
-    <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
-      <MetaTagMaker />
-    </div>
+    <div className="p-4 space-y-6 bg-background text-foreground">
+  <MetaTagMaker />
+</div>
+
   </DialogContent>
 </Dialog>
         </div>
