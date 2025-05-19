@@ -37,7 +37,7 @@ export default function Home() {
           <div className="rounded-lg border bg-card p-6 text-card-foreground shadow-sm">
             <h3 className="font-semibold mb-2">How it Works</h3>
             <p className="text-sm text-muted-foreground">
-              This tool lets you preview how your URLs will appear when shared online by extracting Open Graph metadata. It also provides actionable feedback to help you optimize for improved search visibility and social media engagement.
+            Preview how your URL appears when shared online using Open Graph metadata. Get feedback to improve SEO and generate meta tags if needed.
             </p>
           </div>
 
