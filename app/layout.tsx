@@ -8,8 +8,8 @@ import { Toaster } from "@/components/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Open Graph Debugger",
-  description: "Easily debug, validate, and preview Open Graph and Twitter Card metadata to ensure accurate link previews across social media platforms.",
+ title: "Meta Mirror – Preview & Debug Link Metadata Easily",
+ description: "Easily debug, validate, and preview Open Graph and Twitter Card metadata to ensure accurate link previews across social media platforms.",
   generator: "sudo-self.com",
   icons: {
     icon: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }]
   },
   openGraph: {
-    title: "Twitter link preview title",
+   title: "Meta Mirror – Preview & Debug Link Metadata Easily",
    description: "Easily debug, validate, and preview Open Graph and Twitter Card metadata to ensure accurate link previews across social media platforms.",
     url: "https://meta-mirror.vercel.app", 
     siteName: "Meta-Mirror",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Twitter link preview title",
+    title: "Meta Mirror – Preview & Debug Link Metadata Easily",
     description: "Easily debug, validate, and preview Open Graph and Twitter Card metadata to ensure accurate link previews across social media platforms.",
     images: ["https://meta-mirror.vercel.app/og.png"] 
   }
