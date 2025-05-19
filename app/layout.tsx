@@ -8,9 +8,11 @@ import { Toaster } from "@/components/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
- title: "Meta Mirror – Preview & Debug Link Metadata Easily",
- description: "Easily debug, validate, and preview Open Graph and Twitter Card metadata to ensure accurate link previews across social media platforms.",
+  title: "Meta Mirror – Preview & Debug Link Metadata Easily",
+  description:
+    "Easily debug, validate, and preview Open Graph and Twitter Card metadata to ensure accurate link previews across social media platforms.",
   generator: "sudo-self.com",
+  keywords: ["preview", "debug", "link", "metadata", "easily"],
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -22,13 +24,14 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }]
   },
   openGraph: {
-   title: "Meta Mirror – Preview & Debug Link Metadata Easily",
-   description: "Easily debug, validate, and preview Open Graph and Twitter Card metadata to ensure accurate link previews across social media platforms.",
-    url: "https://meta-mirror.vercel.app", 
+    title: "Meta Mirror – Preview & Debug Link Metadata Easily",
+    description:
+      "Easily debug, validate, and preview Open Graph and Twitter Card metadata to ensure accurate link previews across social media platforms.",
+    url: "https://meta-mirror.vercel.app",
     siteName: "Meta-Mirror",
     images: [
       {
-        url: "https://meta-mirror.vercel.app/og.png", 
+        url: "https://meta-mirror.vercel.app/og.png",
         width: 1200,
         height: 630,
         alt: "Open Graph Debugger Image"
@@ -39,8 +42,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Meta Mirror – Preview & Debug Link Metadata Easily",
-    description: "Easily debug, validate, and preview Open Graph and Twitter Card metadata to ensure accurate link previews across social media platforms.",
-    images: ["https://meta-mirror.vercel.app/og.png"] 
+    description:
+      "Easily debug, validate, and preview Open Graph and Twitter Card metadata to ensure accurate link previews across social media platforms.",
+    images: ["https://meta-mirror.vercel.app/og.png"]
   }
 }
 
@@ -60,6 +64,7 @@ export default function RootLayout({
     </html>
   )
 }
+
 
 
 
