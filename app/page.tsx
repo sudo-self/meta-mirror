@@ -44,7 +44,7 @@ export default function Home() {
 
 <Dialog>
   <DialogTrigger asChild>
-    <button className="px-4 py-2 bg-primary text-white rounded-md hover:bg-primary/90">
+    <button className="px-4 py-2 bg-primary text-white rounded-md hover:bg-primary/90 dark:bg-primary dark:hover:bg-primary/90">
       Meta Maker
     </button>
   </DialogTrigger>
@@ -56,11 +56,11 @@ export default function Home() {
       </DialogDescription>
     </DialogHeader>
     <div className="p-4 space-y-6 bg-background text-foreground">
-  <MetaTagMaker />
-</div>
-
+      <MetaTagMaker />
+    </div>
   </DialogContent>
 </Dialog>
+
         </div>
       </main>
     </div>
