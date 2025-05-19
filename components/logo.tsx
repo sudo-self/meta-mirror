@@ -36,9 +36,11 @@ export function Logo({ className, iconClassName, size = "md" }: LogoProps) {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           className={cn(sizeClasses.icon, iconClassName)}
-          fill="#919191"
         >
-          <path d="m8.29 10.28l3.24-3.25l1.06 1.06l-3.24 3.25zm.41 4.33l5.66-5.66L15.42 10l-5.66 5.67zM14.17 3L18 6.83v10.34L14.17 21H9.83L6 17.17V6.83L9.83 3zM15 1H9L4 6v12l5 5h6l5-5V6z" />
+          <path
+            fill="#919191"
+            d="m8.29 10.28l3.24-3.25l1.06 1.06l-3.24 3.25zm.41 4.33l5.66-5.66L15.42 10l-5.66 5.67zM14.17 3L18 6.83v10.34L14.17 21H9.83L6 17.17V6.83L9.83 3zM15 1H9L4 6v12l5 5h6l5-5V6z"
+          />
         </svg>
       </div>
     </div>
@@ -54,22 +56,8 @@ export function LogoWithText({
   return (
     <div className={cn("flex items-center gap-2", className)}>
       <Logo size={size} iconClassName={iconClassName} className="gap-0" />
-      <h1 className={cn("font-semibold tracking-tight", textClassName)}>SEO</h1>
-    </div>
-  )
-}
-
-
-export function LogoWithText({
-  className,
-  iconClassName,
-  size = "md",
-  textClassName,
-}: LogoProps & { textClassName?: string }) {
-  return (
-    <div className={cn("flex items-center gap-2", className)}>
-      <Logo size={size} iconClassName={iconClassName} className="gap-0" />
       <h1 className={cn("font-semibold tracking-tight", textClassName)}>meta-mirror.vercel.app</h1>
     </div>
   )
 }
+
