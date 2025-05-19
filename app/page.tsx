@@ -41,29 +41,32 @@ export default function Home() {
           </div>
 
           {/* MetaTagMaker Modal */}
-          <Dialog>
-            <DialogTrigger asChild>
-              <button className="px-4 py-2 bg-primary text-white rounded-md hover:bg-primary/90">
-                Open Meta Tag Maker
-              </button>
-            </DialogTrigger>
-            <DialogContent className="max-w-3xl">
-              <DialogHeader>
-                <DialogTitle>Meta Tag Maker</DialogTitle>
-                <DialogDescription>
-                  Create your custom SEO metadata
-                </DialogDescription>
-              </DialogHeader>
-              <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
-                <MetaTagMaker />
-              </div>
-            </DialogContent>
-          </Dialog>
+
+<Dialog>
+  <DialogTrigger asChild>
+    <button className="px-4 py-2 bg-primary text-white rounded-md hover:bg-primary/90">
+      Meta Maker
+    </button>
+  </DialogTrigger>
+  <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto">
+    <DialogHeader>
+      <DialogTitle>Meta Maker</DialogTitle>
+      <DialogDescription>
+        Create SEO metadata
+      </DialogDescription>
+    </DialogHeader>
+    <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+      <MetaTagMaker />
+    </div>
+  </DialogContent>
+</Dialog>
         </div>
       </main>
     </div>
   )
 }
+
+
 
 
 
