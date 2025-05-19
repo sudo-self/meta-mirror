@@ -15,7 +15,7 @@ export default function Home() {
       <main className="container py-10">
         <div className="space-y-6">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tight">URL MetaMirror</h2>
+            <h2 className="text-3xl font-bold tracking-tight">🪞Meta-Mirror</h2>
             <p className="text-muted-foreground">
               Enter a URL to see how it will appear on different platforms
             </p>
