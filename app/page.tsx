@@ -15,7 +15,7 @@ export default function Home() {
       <main className="container py-10">
         <div className="space-y-6">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tight">seo.sudo-self.com</h2>
+            <h2 className="text-3xl font-bold tracking-tight">URL MetaMirror</h2>
             <p className="text-muted-foreground">
               Enter a URL to see how it will appear on different platforms
             </p>
@@ -26,7 +26,7 @@ export default function Home() {
           <div className="rounded-lg border bg-card p-6 text-card-foreground shadow-sm">
             <h3 className="font-semibold mb-2">How it Works</h3>
             <p className="text-sm text-muted-foreground">
-              This tool allows you to visualize how your URLs will appear when shared on the internet. It extracts Open Graph metadata from the URL and provides a score based on seo metadata such as Keywords, title, description, and canonical URL. It also provides specific feedback on how to improve SEO based on those properties. 
+             This tool lets you preview how your URLs will appear when shared online by extracting Open Graph metadata. It also provides actionable feedback to help you optimize for improved search visibility and social media engagement.
             </p>
           </div>
         </div>
