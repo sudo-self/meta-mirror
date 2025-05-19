@@ -9,8 +9,8 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Open Graph Debugger",
-  description: "Debug and preview Open Graph metadata for any URL",
-  generator: "v0.dev",
+  description: "Easily debug, validate, and preview Open Graph and Twitter Card metadata to ensure accurate link previews across social media platforms.",
+  generator: "sudo-self.com",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Twitter link preview title",
-    description: "Twitter link preview description",
+   description: "Easily debug, validate, and preview Open Graph and Twitter Card metadata to ensure accurate link previews across social media platforms.",
     url: "https://meta-mirror.vercel.app", 
     siteName: "Meta-Mirror",
     images: [
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Twitter link preview title",
-    description: "Twitter link preview description",
+    description: "Easily debug, validate, and preview Open Graph and Twitter Card metadata to ensure accurate link previews across social media platforms.",
     images: ["https://meta-mirror.vercel.app/og.png"] 
   }
 }
