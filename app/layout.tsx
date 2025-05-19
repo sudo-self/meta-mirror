@@ -8,9 +8,9 @@ import { Toaster } from "@/components/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Meta Mirror – Preview & Debug Link Metadata Easily",
+  title: "Meta Mirror – Debug & Preview Link Metadata Easily",
   description:
-    "Easily debug, validate, and preview Open Graph and Twitter Card metadata to ensure accurate link previews across social media platforms.",
+    "Meta Mirror helps you easily debug and preview Open Graph and Twitter Card metadata, ensuring accurate link previews for social media and SEO.",
   generator: "sudo-self.com",
   keywords: ["preview", "debug", "link", "metadata", "easily"],
   icons: {
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }]
   },
   openGraph: {
-    title: "Meta Mirror – Preview & Debug Link Metadata Easily",
+    title: "Meta Mirror – Debug & Preview Link Metadata Easily",
     description:
-      "Easily debug, validate, and preview Open Graph and Twitter Card metadata to ensure accurate link previews across social media platforms.",
+      "Meta Mirror helps you easily debug and preview Open Graph and Twitter Card metadata, ensuring accurate link previews for social media and SEO.",
     url: "https://meta-mirror.vercel.app",
     siteName: "Meta-Mirror",
     images: [
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Meta Mirror – Preview & Debug Link Metadata Easily",
+    title: "Meta Mirror – Debug & Preview Link Metadata Easily",
     description:
-      "Easily debug, validate, and preview Open Graph and Twitter Card metadata to ensure accurate link previews across social media platforms.",
+      "Meta Mirror helps you easily debug and preview Open Graph and Twitter Card metadata, ensuring accurate link previews for social media and SEO.",
     images: ["https://meta-mirror.vercel.app/og.png"]
   }
 }
@@ -64,6 +64,7 @@ export default function RootLayout({
     </html>
   )
 }
+
 
 
 
