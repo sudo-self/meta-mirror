@@ -1,7 +1,8 @@
 import { OgDebugger } from "@/components/og-debugger"
 import { ModeToggle } from "@/components/mode-toggle"
 import { LogoWithText } from "@/components/logo"
-import { MetaTagMaker } from '../components/MetaTagMaker';
+import MetaTagMaker from '../components/MetaTagMaker';
+
 
 export default function Home() {
   return (
