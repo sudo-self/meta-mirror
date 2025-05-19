@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180" }]
   },
   openGraph: {
-    title: "Meta Mirror – Optimize, Create, & Preview Link Metadata Easily",
+    title: "Meta Mirror – Debug & Preview Link Metadata Easily",
     description:
       "Meta Mirror helps you easily debug and preview Open Graph and Twitter Card metadata, ensuring accurate link previews for social media and SEO.",
     url: "https://meta-mirror.vercel.app",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-     title: "Meta Mirror – Optimize, Create, & Preview Link Metadata Easily",
+    title: "Meta Mirror – Debug & Preview Link Metadata Easily",
     description:
       "Meta Mirror helps you easily debug and preview Open Graph and Twitter Card metadata, ensuring accurate link previews for social media and SEO.",
     images: ["https://meta-mirror.vercel.app/og.png"]
@@ -64,6 +64,19 @@ export default function RootLayout({
     </html>
   )
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
