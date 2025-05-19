@@ -8,15 +8,9 @@ import { Toaster } from "@/components/toaster"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Open Graph Debugger",
-  description: "Debug and preview Open Graph metadata for any URL",
-    generator: 'v0.dev'
-}
-
-export const metadata: Metadata = {
   title: "meta-mirror",
   description: "Open Graph metadata SEO mirror for any URL",
-  generator: "v0.dev",
+  generator: "vercel",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
