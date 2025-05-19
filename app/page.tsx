@@ -2,6 +2,7 @@ import { OgDebugger } from "@/components/og-debugger"
 import { ModeToggle } from "@/components/mode-toggle"
 import { LogoWithText } from "@/components/logo"
 import MetaTagMaker from '../components/MetaTagMaker'
+import { Button } from "@/components/ui/button" 
 
 import {
   Dialog,
@@ -44,9 +45,7 @@ export default function Home() {
 
 <Dialog>
   <DialogTrigger asChild>
-    <button className="px-4 py-2 bg-primary text-white rounded-md hover:bg-primary/90 dark:bg-primary dark:hover:bg-primary/90">
-      Meta Maker
-    </button>
+    <Button variant="default">Meta Maker</Button>
   </DialogTrigger>
   <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto">
     <DialogHeader>
@@ -66,6 +65,9 @@ export default function Home() {
     </div>
   )
 }
+
+
+
 
 
 
