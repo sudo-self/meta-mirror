@@ -132,7 +132,7 @@ const MetaTagMaker = () => {
 
         <div>
           <label htmlFor="image" className="block text-sm font-semibold mb-1">
-            Open Graph Image
+            image
           </label>
           <input
             id="image"
