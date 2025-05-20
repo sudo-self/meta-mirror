@@ -32,6 +32,7 @@ const MetaTagMaker = () => {
   const [description, setDescription] = useState("");
   const [image, setImage] = useState("");
   const [url, setUrl] = useState("");
+  const [keywords, setKeywords] = useState("");  // New state for keywords
   const [output, setOutput] = useState("");
 
   const handleGenerate = () => {
@@ -39,7 +40,7 @@ const MetaTagMaker = () => {
       title: title || "Default Title",
       description: description || "Default Description",
       generator: "MetaTagMaker",
-      keywords: ["default", "metadata", "seo"],
+      keywords: keywords.split(",").map((keyword) => keyword.trim()),  // Split and trim keywords
       icons: {
         icon: [
           {
@@ -166,6 +167,20 @@ const MetaTagMaker = () => {
           />
         </div>
 
+        <div>
+          <label htmlFor="keywords" className="block text-sm font-semibold mb-1">
+            Keywords (comma separated)
+          </label>
+          <input
+            id="keywords"
+            type="text"
+            className="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring focus:border-blue-300 dark:bg-gray-800 dark:text-white"
+            value={keywords}
+            onChange={(e) => setKeywords(e.target.value)}
+            placeholder="keyword1, keyword2, keyword3"
+          />
+        </div>
+
         <button
           onClick={handleGenerate}
           className="bg-gray-800 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded transition duration-150 dark:bg-gray-900 dark:hover:bg-gray-700"
@@ -184,7 +199,7 @@ const MetaTagMaker = () => {
           <div className="flex gap-3 mt-2">
             <button
               onClick={handleCopyToClipboard}
-             className="bg-gray-700 hover:bg-gray-800 text-white font-semibold py-2 px-4 rounded"
+              className="bg-gray-700 hover:bg-gray-800 text-white font-semibold py-2 px-4 rounded"
             >
               Copy
             </button>
@@ -202,7 +217,3 @@ const MetaTagMaker = () => {
 };
 
 export default MetaTagMaker;
-
-
-
-
