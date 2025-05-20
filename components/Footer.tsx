@@ -8,7 +8,7 @@ export default function Footer() {
           href="https://meta-mirror.vercel.app"
           className="font-mono text-muted-foreground hover:text-primary transition-colors duration-300"
         >
-          Meta-Mirror
+          Meta-Mirror.vercel.app
         </a>
       </div>
     </footer>
