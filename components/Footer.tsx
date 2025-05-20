@@ -18,7 +18,7 @@ export default function Footer() {
           className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"
         >
           <FaGithub className="h-4 w-4" />
-          source code
+          sudo-self
         </a>
       </div>
     </footer>
