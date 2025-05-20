@@ -110,32 +110,23 @@ const MetaTagMaker = () => {
 
       <div className="space-y-4">
         <div>
-          <label htmlFor="title" className="block text-sm font-semibold mb-1">
-            Title
-          </label>
           <input
             id="title"
             type="text"
             className="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring focus:border-blue-300 dark:bg-gray-800 dark:text-white"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            placeholder="title"
+            placeholder="Enter a Title"
           />
         </div>
 
         <div>
-          <label
-            htmlFor="description"
-            className="block text-sm font-semibold mb-1"
-          >
-            Description
-          </label>
           <textarea
             id="description"
             className="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring focus:border-blue-300 dark:bg-gray-800 dark:text-white"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
-            placeholder="description"
+            placeholder="Enter a Description"
           />
         </div>
 
@@ -155,7 +146,7 @@ const MetaTagMaker = () => {
 
         <div>
           <label htmlFor="url" className="block text-sm font-semibold mb-1">
-            Canonical URL
+            URL
           </label>
           <input
             id="url"
@@ -169,7 +160,7 @@ const MetaTagMaker = () => {
 
         <div>
           <label htmlFor="keywords" className="block text-sm font-semibold mb-1">
-            Keywords (comma separated)
+            Keywords
           </label>
           <input
             id="keywords"
