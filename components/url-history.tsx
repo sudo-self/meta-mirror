@@ -94,22 +94,35 @@ export function UrlHistory({ history, onSelectUrl, onRemoveUrl, onClearHistory }
                           <X className="h-3 w-3" />
                         </Button>
                       </div>
-                    </CommandItem>
-                  ))}
-                </ScrollArea>
-              </CommandGroup>
-              <CommandSeparator />
-              <CommandGroup>
-                <CommandItem
-                  onSelect={() => {
-                    onClearHistory()
-                    setOpen(false)
-                  }}
-                  className="justify-center text-destructive"
-                >
-                  <Trash2 className="mr-2 h-4 w-4" />
-                  Clear History
-                </CommandItem>
+<CommandItem
+  key={item.timestamp}
+  value={item.url}
+  onSelect={() => {
+    onSelectUrl(item.url)
+    setOpen(false)
+  }}
+  className="flex items-center justify-between"
+>
+  <div className="flex items-center gap-2 truncate">
+    <Clock className="h-4 w-4 text-muted-foreground" />
+    <span className="truncate">{item.url}</span>
+  </div>
+  <div className="flex items-center gap-2">
+    <span className="text-xs text-muted-foreground">{formatTimestamp(item.timestamp)}</span>
+    <button
+      onClick={(e) => {
+        e.preventDefault()
+        e.stopPropagation()
+        onRemoveUrl(item.url)
+      }}
+      className="hover:text-destructive transition-colors"
+      aria-label={`Remove ${item.url} from history`}
+    >
+      <X className="h-4 w-4" />
+    </button>
+  </div>
+</CommandItem>
+
               </CommandGroup>
             </CommandList>
           </Command>
@@ -118,3 +131,11 @@ export function UrlHistory({ history, onSelectUrl, onRemoveUrl, onClearHistory }
     </>
   )
 }
+
+
+
+
+
+
+
+
