@@ -213,20 +213,40 @@ const MetaTagMaker = () => {
         </div>
       )}
 
-      {/* Live Preview */}
-      <div className="mt-8">
-        <h2 className="text-xl font-semibold mb-2">Live Preview</h2>
-        <div className="bg-gray-100 p-4 rounded-md dark:bg-gray-800">
-          <h3 className="text-lg font-bold">{title || "Title"}</h3>
-          <p>{description || "Description"}</p>
-          <img src={image || "https://example.com/default-image.jpg"} alt="Preview" className="mt-4 w-full max-h-64 object-cover" />
-          <p className="mt-2 text-sm">URL: {url || "https://example.com"}</p>
-          <p className="mt-2 text-sm">Keywords: {keywords || "keywords"}</p>
-        </div>
-      </div>
+{/* Live Preview */}
+<div className="mt-8">
+  <h2 className="text-xl font-semibold mb-2">Live Preview</h2>
+  <div className="bg-gray-100 p-4 rounded-md dark:bg-gray-800">
+    <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+      {title || "Title"}
+    </h3>
+    <p className="text-gray-700 dark:text-gray-300">
+      {description || "Description"}
+    </p>
+    <img
+      src={image || "/placeholder.svg"}
+      alt="Preview"
+      className="mt-4 w-full max-h-64 object-cover rounded"
+    />
+    <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+      URL: {url || "https://example.com"}
+    </p>
+    <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">
+      Keywords: {keywords || "keywords"}
+    </p>
+  </div>
+</div>
     </div>
   );
 };
 
 export default MetaTagMaker;
+
+
+
+
+
+
+
+
 
