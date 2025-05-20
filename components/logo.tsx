@@ -56,7 +56,7 @@ export function LogoWithText({
   return (
     <div className={cn("flex items-center gap-2", className)}>
       <Logo size={size} iconClassName={iconClassName} className="gap-0" />
-      <h1 className={cn("font-semibold tracking-tight", textClassName)}>meta-mirror.vercel.app</h1>
+      <h1 className={cn("font-semibold tracking-tight", textClassName)}>Meta-Mirror</h1>
     </div>
   )
 }
