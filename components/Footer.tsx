@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
-import { SiNextdotjs } from 'react-icons/si';
+import { SiNextdotjs, SiNodedotjs } from 'react-icons/si';
 
 export default function Footer() {
   return (
@@ -31,11 +31,21 @@ export default function Footer() {
             <SiNextdotjs className="h-4 w-4" />
             Next.js
           </a>
+          <a
+            href="https://nodejs.org/en/blog/release/v22.0.0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 hover:text-primary transition-colors"
+          >
+            <SiNodedotjs className="h-4 w-4" />
+            Node.js
+          </a>
         </div>
       </div>
     </footer>
   );
 }
+
 
 
 
