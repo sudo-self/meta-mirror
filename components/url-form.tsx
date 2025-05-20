@@ -2,10 +2,7 @@
 
 import type React from "react"
 
-/**
- * Component for the URL input form
- * Handles URL input, validation, and submission
- */
+
 import { AlertCircle } from "lucide-react"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
@@ -15,27 +12,27 @@ import { UrlHistory } from "@/components/url-history"
 import type { UrlHistoryItem } from "@/hooks/use-url-history"
 
 interface UrlFormProps {
-  /** The current URL */
+
   url: string
-  /** Function to update the URL */
+
   onUrlChange: (url: string) => void
-  /** Function to clear the URL */
+
   onUrlClear: () => void
-  /** Function to submit the form */
+ 
   onSubmit: (e: React.FormEvent) => Promise<void>
-  /** Whether the URL is valid */
+
   isValid: boolean
-  /** Whether the form is submitting */
+
   isLoading: boolean
-  /** Error message, if any */
+
   error: string | null
-  /** Function to clear any error */
+
   onErrorClear: () => void
-  /** URL history items */
+ 
   history: UrlHistoryItem[]
-  /** Function to remove a URL from history */
+
   onRemoveUrl: (url: string) => void
-  /** Function to clear all history */
+
   onClearHistory: () => void
 }
 
@@ -52,7 +49,7 @@ export function UrlForm({
   onRemoveUrl,
   onClearHistory,
 }: UrlFormProps) {
-  // Handle form submission
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     onSubmit(e)
@@ -129,7 +126,7 @@ export function UrlForm({
                     Reflecting
                   </>
                 ) : (
-                  "Meta Mirror"
+                  "Analyze URL"
                 )}
               </Button>
               {/* The UrlHistory component is now outside the form's button group */}
