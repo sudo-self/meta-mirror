@@ -1,12 +1,13 @@
-import type React from "react"
-import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import "./globals.css"
-import { ThemeProvider } from "@/components/theme-provider"
-import { Toaster } from "@/components/toaster"
-import Footer from "../components/Footer"
+import type React from "react";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
+import { Toaster } from "@/components/toaster";
+import Footer from "../components/Footer";
+import { Head } from "next/document";
 
-const inter = Inter({ subsets: ["latin"] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Meta Mirror – Debug & Preview Link Metadata Easily",
@@ -47,16 +48,22 @@ export const metadata: Metadata = {
       "Meta Mirror helps you easily debug and preview Open Graph and Twitter Card metadata, ensuring accurate link previews for social media and SEO.",
     images: ["https://meta-mirror.vercel.app/og.png"]
   }
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-     <body className={`${inter.className} flex min-h-screen flex-col`}>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+        <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192" />
+        <link rel="icon" href="/icon-512.png" type="image/png" sizes="512x512" />
+      </Head>
+      <body className={`${inter.className} flex min-h-screen flex-col`}>
         <ThemeProvider>
           {children}
           <Footer />
@@ -64,8 +71,9 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }
+
 
 
 
