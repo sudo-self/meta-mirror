@@ -126,7 +126,7 @@ export function UrlForm({
                     Reflecting
                   </>
                 ) : (
-                  "Analyze URL"
+                  "Inspect URL"
                 )}
               </Button>
               {/* The UrlHistory component is now outside the form's button group */}
