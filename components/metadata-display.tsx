@@ -1,18 +1,14 @@
-/**
- * Component for displaying Open Graph metadata
- * Shows all extracted metadata in a structured format
- */
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
-import { History } from "lucide-react"
+import { History, Type, ImageIcon, Link2, FileText, HelpCircle, Search } from "lucide-react"
 import { MetadataItem } from "@/components/metadata-item"
 import type { OgData } from "@/lib/types"
 
 interface MetadataDisplayProps {
-  /** The Open Graph data to display */
+
   ogData: OgData
-  /** The original URL that was analyzed */
+
   originalUrl: string
 }
 
@@ -23,7 +19,10 @@ export function MetadataDisplay({ ogData, originalUrl }: MetadataDisplayProps) {
     <Card className="p-6">
       <div className="space-y-6">
         <div className="flex items-center justify-between">
-          <h3 className="text-xl font-semibold">Raw Metadata</h3>
+          <h3 className="text-xl font-semibold flex items-center gap-2">
+            <Search className="w-5 h-5 text-muted-foreground" />
+            Raw Metadata
+          </h3>
           {wasRedirected && (
             <TooltipProvider>
               <Tooltip>
@@ -42,14 +41,15 @@ export function MetadataDisplay({ ogData, originalUrl }: MetadataDisplayProps) {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <MetadataItem label="Title" value={ogData.title} />
-          <MetadataItem label="Description" value={ogData.description} />
-          <MetadataItem label="Image" value={ogData.image} isUrl />
-          <MetadataItem label="URL" value={ogData.url || originalUrl} isUrl />
-          <MetadataItem label="Site Name" value={ogData.siteName} />
-          <MetadataItem label="Type" value={ogData.type} />
+          <MetadataItem label="Title" value={ogData.title} icon={FileText} />
+          <MetadataItem label="Description" value={ogData.description} icon={HelpCircle} />
+          <MetadataItem label="Image" value={ogData.image} isUrl icon={ImageIcon} />
+          <MetadataItem label="URL" value={ogData.url || originalUrl} isUrl icon={Link2} />
+          <MetadataItem label="Site Name" value={ogData.siteName} icon={FileText} />
+          <MetadataItem label="Type" value={ogData.type} icon={Type} />
         </div>
       </div>
     </Card>
   )
 }
+
