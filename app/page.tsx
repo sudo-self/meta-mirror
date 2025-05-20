@@ -28,7 +28,7 @@ export default function Home() {
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tight">Open Graph SEO</h2>
             <p className="text-muted-foreground">
-              Enter a URL to see how it will appear on different platforms
+              Enter a URL to see how it will appear across social platforms
             </p>
           </div>
 
@@ -40,8 +40,7 @@ export default function Home() {
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
               <div className="flex-1 min-w-0">
                 <p className="text-sm text-muted-foreground">
-                  Preview how your URL appears when shared online using Open Graph metadata.
-                  Get feedback to improve SEO and generate meta tags if needed.
+                 Preview how your URL will appear when shared on social platforms using Open Graph metadata. Enhance visibility and generate SEO-friendly metadata as needed.
                 </p>
               </div>
               <Dialog>
