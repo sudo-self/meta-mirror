@@ -141,7 +141,7 @@ const MetaTagMaker = () => {
 
         <div>
           <label htmlFor="image" className="block text-sm font-semibold mb-1">
-            Image URL
+            Open Graph Image
           </label>
           <input
             id="image"
@@ -155,7 +155,7 @@ const MetaTagMaker = () => {
 
         <div>
           <label htmlFor="url" className="block text-sm font-semibold mb-1">
-            Page URL
+            Canonical URL
           </label>
           <input
             id="url"
@@ -177,7 +177,7 @@ const MetaTagMaker = () => {
             className="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring focus:border-blue-300 dark:bg-gray-800 dark:text-white"
             value={keywords}
             onChange={(e) => setKeywords(e.target.value)}
-            placeholder="keyword1, keyword2, keyword3"
+            placeholder="keyword, keyword, keyword, Keyword"
           />
         </div>
 
