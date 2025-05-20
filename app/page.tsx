@@ -3,7 +3,6 @@ import { ModeToggle } from "@/components/mode-toggle"
 import { LogoWithText } from "@/components/logo"
 import MetaTagMaker from "../components/MetaTagMaker"
 import { Button } from "@/components/ui/button"
-
 import {
   Dialog,
   DialogTrigger,
@@ -36,37 +35,36 @@ export default function Home() {
           {/* OG Debugger Tool */}
           <OgDebugger />
 
-          {/* How It Works Card */}
-          <div className="rounded-lg border bg-card p-6 text-card-foreground shadow-sm">
-            <h3 className="font-semibold mb-2">How it Works</h3>
-            <p className="text-sm text-muted-foreground mb-4">
-              Preview how your URL appears when shared online using Open Graph metadata.
-              Get feedback to improve SEO and generate meta tags if needed.
-            </p>
-
-            {/* Right-Aligned Button */}
-            <div className="flex justify-end">
-              <Dialog>
-                <DialogTrigger asChild>
-                  <Button variant="default">Meta Maker</Button>
-                </DialogTrigger>
-                <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto">
-                  <DialogHeader>
-                    <DialogTitle>Meta Maker</DialogTitle>
-                    <DialogDescription>Create SEO metadata</DialogDescription>
-                  </DialogHeader>
-                  <div className="p-4 space-y-6 bg-background text-foreground">
-                    <MetaTagMaker />
-                  </div>
-                </DialogContent>
-              </Dialog>
+          {/* How It Works Card with Aligned Button */}
+          <div className="flex items-center justify-between rounded-lg border bg-card p-6 text-card-foreground shadow-sm">
+            <div>
+              <h3 className="font-semibold mb-2 text-lg">How it Works</h3>
+              <p className="text-sm text-muted-foreground max-w-md">
+                Preview how your URL appears when shared online using Open Graph metadata.
+                Get feedback to improve SEO and generate meta tags if needed.
+              </p>
             </div>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button className="h-auto py-2 px-4 text-sm font-medium">Meta Maker</Button>
+              </DialogTrigger>
+              <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto">
+                <DialogHeader>
+                  <DialogTitle>Meta Maker</DialogTitle>
+                  <DialogDescription>Create SEO metadata</DialogDescription>
+                </DialogHeader>
+                <div className="p-4 space-y-6 bg-background text-foreground">
+                  <MetaTagMaker />
+                </div>
+              </DialogContent>
+            </Dialog>
           </div>
         </div>
       </main>
     </div>
   )
 }
+
 
 
 
