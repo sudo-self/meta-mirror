@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://meta-mirror.vercel.app/</loc>
     <lastmod>2025-05-20T07:49:19.791Z</lastmod>
@@ -7,3 +7,4 @@
     <priority>0.7</priority>
   </url>
 </urlset>
+
