@@ -44,27 +44,30 @@ export default function Home() {
               Get feedback to improve SEO and generate meta tags if needed.
             </p>
 
-            {/* MetaTagMaker Modal Trigger */}
-            <Dialog>
-              <DialogTrigger asChild>
-                <Button variant="default">Meta Maker</Button>
-              </DialogTrigger>
-              <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto">
-                <DialogHeader>
-                  <DialogTitle>Meta Maker</DialogTitle>
-                  <DialogDescription>Create SEO metadata</DialogDescription>
-                </DialogHeader>
-                <div className="p-4 space-y-6 bg-background text-foreground">
-                  <MetaTagMaker />
-                </div>
-              </DialogContent>
-            </Dialog>
+            {/* Right-Aligned Button */}
+            <div className="flex justify-end">
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button variant="default">Meta Maker</Button>
+                </DialogTrigger>
+                <DialogContent className="max-w-3xl max-h-[90vh] overflow-y-auto">
+                  <DialogHeader>
+                    <DialogTitle>Meta Maker</DialogTitle>
+                    <DialogDescription>Create SEO metadata</DialogDescription>
+                  </DialogHeader>
+                  <div className="p-4 space-y-6 bg-background text-foreground">
+                    <MetaTagMaker />
+                  </div>
+                </DialogContent>
+              </Dialog>
+            </div>
           </div>
         </div>
       </main>
     </div>
   )
 }
+
 
 
 
