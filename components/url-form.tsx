@@ -129,7 +129,7 @@ export function UrlForm({
                     Reflecting
                   </>
                 ) : (
-                  "View"
+                  "Meta Mirror"
                 )}
               </Button>
               {/* The UrlHistory component is now outside the form's button group */}
