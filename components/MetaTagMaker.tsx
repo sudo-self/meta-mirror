@@ -212,8 +212,21 @@ const MetaTagMaker = () => {
           </div>
         </div>
       )}
+
+      {/* Live Preview */}
+      <div className="mt-8">
+        <h2 className="text-xl font-semibold mb-2">Live Preview</h2>
+        <div className="bg-gray-100 p-4 rounded-md dark:bg-gray-800">
+          <h3 className="text-lg font-bold">{title || "Default Title"}</h3>
+          <p>{description || "Default Description"}</p>
+          <img src={image || "https://example.com/default-image.jpg"} alt="Preview" className="mt-4 w-full max-h-64 object-cover" />
+          <p className="mt-2 text-sm">URL: {url || "https://example.com"}</p>
+          <p className="mt-2 text-sm">Keywords: {keywords || "No keywords provided"}</p>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default MetaTagMaker;
+
