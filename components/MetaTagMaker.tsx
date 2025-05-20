@@ -40,7 +40,7 @@ const MetaTagMaker = () => {
       title: title || "Default Title",
       description: description || "Default Description",
       generator: "MetaTagMaker",
-      keywords: keywords.split(",").map((keyword) => keyword.trim()),  // Split and trim keywords
+      keywords: keywords.split(",").map((keyword) => keyword.trim()), 
       icons: {
         icon: [
           {
@@ -57,13 +57,13 @@ const MetaTagMaker = () => {
         ],
       },
       openGraph: {
-        title: title || "Default Title",
-        description: description || "Default Description",
+        title: title || "Title",
+        description: description || "Description",
         url: url || "https://example.com",
         siteName: "Example Site",
         images: [
           {
-            url: image || "https://example.com/default-image.jpg",
+            url: image || "https://example.com/image.png",
             width: 1200,
             height: 630,
             alt: "Open Graph Image",
@@ -74,7 +74,7 @@ const MetaTagMaker = () => {
       twitter: {
         card: "summary_large_image",
         title: title || "Default Title",
-        description: description || "Default Description",
+        description: description || "Description",
         images: [image || "https://example.com/default-image.jpg"],
       },
     };
@@ -119,7 +119,7 @@ const MetaTagMaker = () => {
             className="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring focus:border-blue-300 dark:bg-gray-800 dark:text-white"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            placeholder="Enter the project title"
+            placeholder="title"
           />
         </div>
 
@@ -135,7 +135,7 @@ const MetaTagMaker = () => {
             className="w-full px-3 py-2 border rounded shadow-sm focus:outline-none focus:ring focus:border-blue-300 dark:bg-gray-800 dark:text-white"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
-            placeholder="Enter the meta description"
+            placeholder="description"
           />
         </div>
 
