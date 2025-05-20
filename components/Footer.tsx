@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaGithub } from 'react-icons/fa';
+import { SiNextdotjs } from 'react-icons/si';
 
 export default function Footer() {
   return (
@@ -10,20 +11,33 @@ export default function Footer() {
           className="font-mono text-sm text-muted-foreground hover:text-primary transition-colors"
         >
           meta-mirror.vercel.app
-        </a>
-        <a
-          href="https://github.com/sudo-self/meta-mirror"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors"
-        >
-          <FaGithub className="h-4 w-4" />
-          sudo-self
-        </a>
+        </a><br />
+        <div className="flex items-center gap-4 text-xs text-muted-foreground">
+          <a
+            href="https://github.com/sudo-self/meta-mirror"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 hover:text-primary transition-colors"
+          >
+            <FaGithub className="h-4 w-4" />
+            sudo-self
+          </a>
+          <a
+            href="https://github.com/vercel/next.js/releases/tag/v15.3.2"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1 hover:text-primary transition-colors"
+          >
+            <SiNextdotjs className="h-4 w-4" />
+            Next.js
+          </a>
+        </div>
       </div>
     </footer>
   );
 }
+
+
 
 
 
