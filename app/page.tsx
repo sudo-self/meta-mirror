@@ -26,7 +26,7 @@ export default function Home() {
         <div className="space-y-6">
           {/* Title Section */}
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tight">SEO Meta Mirror</h2>
+            <h2 className="text-3xl font-bold tracking-tight">Open Graph SEO</h2>
             <p className="text-muted-foreground">
               Enter a URL to see how it will appear on different platforms
             </p>
