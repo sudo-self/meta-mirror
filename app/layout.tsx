@@ -5,9 +5,10 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/toaster";
 import Footer from "../components/Footer";
-import { Head } from "next/document";
+
 
 const inter = Inter({ subsets: ["latin"] });
+
 
 export const metadata: Metadata = {
   title: "Meta Mirror – Debug & Preview Link Metadata Easily",
@@ -50,6 +51,7 @@ export const metadata: Metadata = {
   }
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -57,12 +59,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
-        <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192" />
-        <link rel="icon" href="/icon-512.png" type="image/png" sizes="512x512" />
-      </Head>
       <body className={`${inter.className} flex min-h-screen flex-col`}>
         <ThemeProvider>
           {children}
@@ -73,8 +69,6 @@ export default function RootLayout({
     </html>
   );
 }
-
-
 
 
 
